@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: rgb(104,166,148);
+    background: linear-gradient(0deg, rgba(104,166,148,1) 45%, rgba(171,191,128,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 16px;
+    padding: 16px;
+}
+
+a {
+    color: #F2D091;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #BF613F;
+}
+
+nav a {
+    margin-right: 40px;
+    color: whitesmoke;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.larger_img {
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+}
+
+nav {
+    padding: 16px;
+    background-color: #f2b885bc;
+    font-size: x-large;
+}
+
+.recipes-list-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap:24px;
+}
+
+.recipe-grid {
+    display:grid;
+    grid-template-columns: 500px 250px 1fr;
+    grid-template-rows: auto;
+    gap:24px;
+}
+
+h1 {
+    padding: 20px 0;
+}
+
+h3 {
+    padding: 12px 0;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    padding: 6px 0;
+}
+
+table {
+    border-spacing: 0 6px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #f2d091bc;
+}
+
+form p {
+    padding-bottom: 30px;
+}
+
+label,input,textarea,button {
+    display: block;
+    font-size: large;
+}
+
+input,textarea {
+    width: 600px;
+    min-height: 40px;
+}
+
+button {
+    background-color: #BF613F;
+    padding: 12px;
+}
+
+footer {
+    padding: 16px;
+    background-color: #BF613F;
+    margin-top: auto;
+}
+
+.star-rating {
+    direction: rtl;
+}
+
+.star-rating > input {
+    display: none;
+}
+
+.star-rating > label {
+    font-size: 24px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.star-rating > input:checked ~ label {
+    color: rgb(0, 26, 255);
+}
